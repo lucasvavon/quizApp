@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D0D0D0"
+    android:orientation="vertical"
+    tools:context=".QuizActivity">
+
+
+    <ImageView
+        android:id="@+id/icon_quiz"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="35dp"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/quiz"/>
+
+    <TextView
+        android:id="@+id/txtQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/icon_quiz"
+        android:layout_marginTop="40dp"
+        android:text="@string/question"
+        android:textAlignment="center"
+        android:textColor="#404040"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/first_answer"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/txtQuestion"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/answer_button"
+        android:onClick="onClickAnswerOne"
+        android:text="@string/rep1"
+        android:textAlignment="center"
+        android:textSize="16sp" />
+    <TextView
+        android:id="@+id/second_answer"
+        android:layout_below="@+id/first_answer"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/answer_button"
+        android:textColor="#808080"
+        android:text="REP2"
+        android:textSize="16dp"
+        android:onClick="onClickAnswerTwo"/>
+
+    <TextView
+        android:id="@+id/third_answer"
+        android:layout_below="@+id/second_answer"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/answer_button"
+        android:text="REP3"
+        android:textSize="16dp"
+        android:onClick="onClickAnswerThree"/>
+
+    <TextView
+        android:id="@+id/fourth_answer"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/third_answer"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/answer_button"
+        android:onClick="onClickAnswerFour"
+        android:text="REP4"
+        android:textAlignment="center"
+        android:textSize="16dp" />
+
+</RelativeLayout>
+
+

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D0D0D0"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/icon_quiz"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        app:srcCompat="@drawable/user" />
+
+    <TextView
+        android:id="@+id/tv_user_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/icon_quiz"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:text="blabla"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/tv_email_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_user_id"
+        android:layout_marginTop="20dp"
+        android:text="blabla"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_play"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/tv_email_id"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/button_selector"
+        android:onClick="play"
+        android:text="Jouer"
+        android:textColor="#808080" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_delete"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/btn_logout"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/button_selector"
+        android:text="supprimer mon compte"
+        android:textColor="#808080" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_logout"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/btn_play"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/button_selector"
+        android:text="Se déconnecter"
+        android:textColor="#808080" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        android:onClick="changeImage"/>
+
+
+
+</RelativeLayout>

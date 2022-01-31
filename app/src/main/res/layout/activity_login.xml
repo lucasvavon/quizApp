@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D0D0D0"
+    tools:context=".LoginActivity">
+
+
+    <ImageView
+        android:id="@+id/icon_quiz"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        app:srcCompat="@drawable/quiz" />
+
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/icon_quiz"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:text="Connectez-vous"
+        android:textColor="#404040"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_login_email"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_title"
+        android:hint="Email"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp">
+
+        <EditText
+            android:id="@+id/et_login_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            tools:ignore="SpeakableTextPresentCheck"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_login_password"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/til_login_email"
+        android:hint="Mot de passe"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true">
+
+        <EditText
+            android:id="@+id/et_login_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_login"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/til_login_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_selector"
+        android:hapticFeedbackEnabled="true"
+        android:text="Connexion"
+        android:textColor="#404040" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_login"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/tv_don_t_have_an_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vous n\'avez pas de compte ?  "
+            android:textColor="#404040" />
+
+        <TextView
+            android:id="@+id/tv_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:foreground="?attr/selectableItemBackground"
+            android:text="S'incrire"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
